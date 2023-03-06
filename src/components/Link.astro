@@ -1,0 +1,22 @@
+---
+export interface Props {
+	href: string;
+    wnew: boolean;
+}
+
+const { href, wnew } = Astro.props;
+---
+
+<a class="link" target={wnew ? "_blank" : "_self"} href={href}><slot /></a>
+<style>
+	a.link {
+		text-decoration: none;
+		color: rgb(75, 170, 182);
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+	a.link:is(:hover, :focus-within) {
+		text-decoration: underline;
+		color: rgb(57, 130, 139);
+		transition: color 0.6s cubic-bezier(0.22, 1, 0.36, 1);
+	}
+</style>

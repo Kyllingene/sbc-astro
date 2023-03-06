@@ -1,0 +1,124 @@
+---
+import Layout from "../layouts/Layout.astro";
+---
+
+<Layout title="Good News - Spokane Bible Church">
+    <main>
+        <h1 class="text-emph">There is Good News!</h1>
+        <br /><br /><br /><br />
+        <ul>
+            <li>
+                Sin is the <span class="bolder">basic problem</span> in our world. It is why there is so much hurting, pain, and brokenness. God didn’t create everything this way. He created everything <span class="bolder">very good</span>, yet we sinned against Him. Sin has <span class="bolder">separated</span> us from Him and from one another.
+            </li>
+            <li>
+                Graciously, He has taken steps to <span class="bolder">solve our sin problem</span> to restore our relationship with Him and others. He did this by sending His own Son, Jesus Christ, who was without sin and could pay the penalty for our sin by dying for us on the cross.
+            </li>
+            <li>
+                God was <span class="bolder">satisfied</span> with His payment and raised Him from the dead so that He can give us His life. When we <span class="bolder">believe in Him</span>, God gives us His life. At that time, our relationship with God is <span class="bolder">restored</span> and we have eternal life.
+            </li>
+        </ul>
+        <hr>
+        <h1 id="john316">
+            “For God so loved the world, that He gave His only begotten Son, that whoever believes in Him shall not perish, but have eternal life.”
+        </h1>
+        <h2 class="text-emph">John 3:16</h2>
+    </main>
+</Layout>
+
+<style>
+    main {
+        margin: auto;
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+    h1 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin: 0;
+        text-align: center;
+    }
+    #john316 {
+        text-decoration: none;
+    }
+    h2 {
+        text-align: center;
+    }
+    ul {
+        text-align: center;
+    }
+	ul li {
+        padding: 2em;
+        font-size: larger;
+        display: inline-block;
+        max-width: 50%;
+        text-align: center;
+	}
+	.header {
+		display: block;
+		margin: 2em;
+		padding: 1em;
+		border: 3px solid rgba(var(--accent), 65%);
+		border-radius: 0.25rem;
+		text-align: center;
+		color: rgb(75, 170, 182);
+		font-weight: bold;
+		font-size: large;
+	}
+    .text-emph {
+        color: var(--emphasis);
+        -webkit-background-clip: text;
+        background-size: 400%;
+        background-position: 0%;
+    }
+    .time {
+        color: var(--emphasis);
+        background-size: 400%;
+        background-position: 0%;
+        font-weight: bold;
+		padding-left: 2em;
+    }
+    .information {
+        line-height: 1.6;
+        margin: 1rem 0;
+        border: 2px solid rgba(var(--accent), 65%);
+        background-color: white;
+        padding: 1rem;
+		padding-top: 0rem;
+        border-radius: 0.25rem;
+    }
+    .information code {
+        font-size: 0.875em;
+        font-weight: bold;
+        background: rgba(var(--accent), 12%);
+        color: rgb(var(--accent));
+        border-radius: 4px;
+        padding: 0.3em 0.45em;
+		align-items: center;
+    }
+    .information strong {
+        color: rgb(var(--accent));
+    }
+	.information h2 {
+		text-align: center;
+	}
+    .link-card-grid {
+        display: grid;
+        grid-template-columns: repeat(1, minmax(24ch, 1fr));
+        gap: 1rem;
+        padding: 0;
+    }
+	.location {
+		text-align: center;
+		font-size: large;
+		font-weight: bolder;
+	}
+	.nav li {
+		display: inline-block;
+		list-style-type: none;
+		margin-right: 1em;
+	}
+    .bolder {
+        font-weight: bolder;
+        color: rgb(212, 236, 243);
+    }
+</style>

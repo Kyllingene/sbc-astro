@@ -1,0 +1,30 @@
+---
+import Layout from "../../../layouts/Layout.astro";
+import Link from "../../../components/Link.astro";
+---
+
+<!-- TODO: use the ^^^above^^^ section to fetch videos, maybe? -->
+
+<Layout title="Matthew - Spokane Bible Church">
+    <main>
+        <h1>The Book of <span class="text-emph">Matthew</span></h1>
+        <br /><br />
+
+        <ul>
+            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=oNn09rgQB4Q">Matthew 1, The Geneology of the King</Link></li></h2>
+            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=xaArcV_VM18">Birth Narratives, Matthew 1:1-25 and Luke 1:26-38</Link></li></h2>
+            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=Vk9i-R-mAsQ">Matthew 11:1-5</Link></li></h2>
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    h2 {
+        font-size: larger;
+    }
+</style>

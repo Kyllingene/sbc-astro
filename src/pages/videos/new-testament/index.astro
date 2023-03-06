@@ -1,0 +1,29 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Link from '../../../components/Link.astro'
+---
+
+<Layout title="New Testament - Spokane Bible Church">
+    <main>
+        <h1>The <span class="text-emph">New Testament</span></h1>
+        <br /><br />
+
+        <ul>
+            <h2><li><Link wnew={false} href="matthew">Matthew</Link></li></h2>
+            <h2><li><Link wnew={false} href="mark">Mark</Link></li></h2>
+            <h2><li><Link wnew={false} href="luke">Luke</Link></li></h2>
+            <h2><li><Link wnew={false} href="john">John</Link></li></h2>
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+
+    h2 {
+        font-size: xx-large;
+    }
+</style>

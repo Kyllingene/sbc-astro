@@ -1,0 +1,24 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import Link from '../../components/Link.astro'
+---
+<Layout title="Videos - Spokane Bible Church">
+    <main>
+        <h1>Lessons</h1>
+        <br />
+
+        <ul>
+            <li><h2><Link wnew={false} href="videos/new-testament/">New Testament</Link></h2></li>
+            <li><h2><Link wnew={false} href="videos/old-testament/">Old Testament</Link></h2></li>
+        </ul>
+    </main>
+</Layout>
+
+<style>
+    ul {
+        padding-left: 0em;
+    }
+    li {
+        list-style-type: none;
+	}
+</style>
