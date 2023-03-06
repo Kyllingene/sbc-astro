@@ -1,6 +1,6 @@
 ---
 import Layout from "../../../layouts/Layout.astro";
-import Link from "../../../components/Link.astro";
+import Video from "../../../components/Video.astro";
 ---
 
 <!-- TODO: use the ^^^above^^^ section to fetch videos, maybe? -->
@@ -11,20 +11,9 @@ import Link from "../../../components/Link.astro";
         <br /><br />
 
         <ul>
-            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=oNn09rgQB4Q">Matthew 1, The Geneology of the King</Link></li></h2>
-            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=xaArcV_VM18">Birth Narratives, Matthew 1:1-25 and Luke 1:26-38</Link></li></h2>
-            <h2><li><Link wnew={true} href="https://www.youtube.com/watch?v=Vk9i-R-mAsQ">Matthew 11:1-5</Link></li></h2>
+            <Video url="https://www.youtube.com/watch?v=oNn09rgQB4Q" title="Matthew 1, The Geneology of the King" />
+            <Video url="https://www.youtube.com/watch?v=xaArcV_VM18" title="Birth Narratives, Matthew 1:1-25 and Luke 1:26-38" />
+            <Video url="https://www.youtube.com/watch?v=Vk9i-R-mAsQ" title="Matthew 11:1-5" />
         </ul>
     </main>
 </Layout>
-
-<style>
-    ul {
-        list-style-type: none;
-        padding-left: 0;
-    }
-
-    h2 {
-        font-size: larger;
-    }
-</style>
