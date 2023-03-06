@@ -1,0 +1,25 @@
+---
+export interface Props {
+    title: string;
+    url: string;
+}
+
+import Link from './Link.astro';
+
+const { title, url } = Astro.props;
+---
+<h3>
+    <li>
+        <Link wnew={true} href={url}>{title}</Link>
+    </li>
+</h3>
+<hr />
+
+<style>
+    h3 {
+        font-size: larger;
+    }
+    hr {
+        width: 10%;
+    }
+</style>
